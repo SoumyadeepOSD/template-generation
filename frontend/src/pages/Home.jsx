@@ -3,7 +3,7 @@ import Hero from "../components/hero/Hero"
 import Footer from "../components/footer/Footer"
 const Home = () => {
   return (
-    <div>
+    <div className="mt-10">
         <Header/>
         <Hero/>
         <Footer/>

@@ -33,6 +33,8 @@
     border-radius: 5px; /* Rounded corners */
     outline: none; /* Remove the default focus outline */
     caret-color: white;
+    width: 80vw;
+    resize: none;
   }
   
 .text-area:focus {
