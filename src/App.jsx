@@ -1,6 +1,16 @@
+import './index.css';
+import Landing from './pages/Landing';
+import Home from './pages/Home';
+import { Routes, Route } from "react-router-dom";
+
 const App = () => {
   return (
-    <div>App</div>
+    <div className="bg-gradient-to-b from-slate-950 via-sky-950 to-blue-900 h-screen container">
+      <Routes>
+        <Route path="/" element={<Landing />}/>
+        <Route path="home" element={<Home />}/>
+      </Routes>
+    </div>
   )
 }
 
