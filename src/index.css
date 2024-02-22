@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  padding: 0;
+  margin: 0;
+  /* overflow: hidden; */
+}
+
+.Container,
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, cyan, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.svg {
+  z-index: 0;
+  position: absolute;
+  width: 100vw;
+  height: 30%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  justify-content: space-evenly;
+}
+
+.LandingPage-Container {
+  width: 100%;
+  padding-left: 5rem;
+  padding-top: 5rem;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.title {
+  font-size: 5rem;
+}
+
+.text-area {
+  width: 50%;
+  padding: 10px;
+  border: 2px solid #3182ce;
+  /* Blue border color */
+  border-radius: 5px;
+  /* Rounded corners */
+  outline: none;
+  /* Remove the default focus outline */
+  caret-color: white;
+  width: 80vw;
+  resize: none;
+}
+
+.first-row> :nth-child(-n+2) {
+  width: 40vw;
+  resize: none;
+}
+
+.text-area:focus {
+  border-color: #63b3ed;
+  /* Lighter blue border color on focus */
+  box-shadow: 0 0 5px #63b3ed;
+  /* Blue glow effect on focus */
+}
+
+
+@keyframes text-appear {
+  from {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.loading-text {
+  opacity: 0;
+  line-height: 1.3;
+  animation: text-appear 2s ease forwards;
+}
+
+.response {
+  margin-top: 1rem;
+  color: white;
+  border: 2px solid cyan;
+  border-radius: 1rem;
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  scroll-behavior: smooth;
+}
