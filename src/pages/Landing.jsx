@@ -22,8 +22,8 @@ const Landing = () => {
           </h1>
         </section>
       </div>
-      <img src="svg.png" alt="" className="w-full absolute bottom-0 h-3/6 opacity-50" />
-      <img src="email_icon_2.png" alt="" className="h-20 w-20 absolute bottom-44 lg:bottom-64 right-40 lg:right-48 loading-text" />
+      <img src="public/static/images/svg.png" alt="" className="w-full absolute bottom-0 h-3/6 opacity-50" />
+      <img src="public/static/images/email_icon_2.png" alt="" className="h-20 w-20 absolute bottom-44 lg:bottom-64 right-40 lg:right-48 loading-text" />
       <section className="absolute lg:bottom-48 left-28 lg:left-20 top-64 lg:top-96">
         <button onClick={handleSubmit} className="btn btn-outline btn-success mt-10 "><h1 className="text-2xl">
           Get Started
