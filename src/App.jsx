@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div className="bg-gradient-to-b from-slate-950 via-sky-950 to-blue-900 h-screen container">
       <Routes>
-        <Route exact path="/" element={<Landing />}/>
+        <Route path="/" element={<Landing />}/>
         <Route path="/home" element={<Home />}/>
       </Routes>
     </div>
